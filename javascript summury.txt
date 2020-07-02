@@ -160,6 +160,59 @@ querySelector  : 찾으려고 하는 태그의 첫 번째만 찾아오는 속성
 javascript get element by css selector multiple
 : document.querySeletorAll( );
 
+25.함수 (function)
+연속적인 반복이 아니라면 반복문을 사용할 수 없다. 함수를 이용 ! 
+ 
+기본 형식 : function night  name(     ) {   코드   }
+실행 코드 : name ( ) ;
+
+26.함수 : 매개변수와 인자 
+자판기 음료 선택 : 입력 
+음료 나옴 : 출력 
+함수: 입력과 출력으로 이루어져 있음 
+
+function sum( left, right){
+         document.write(left+right);
+}
+sum(2,3);
+sum(3,4);
+
+(left, right) => 매개변수 
+(2,3)/(3,4) => 인자 
+
+매개변수와 인자는 함수에 들어오는 입력값! 
+
+27.함수: 리턴 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
  
 
