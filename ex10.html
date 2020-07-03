@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ex10</title>
+</head>
+<body>
+    <h1>Object</h1>
+
+    <h2>Creat</h2>
+    <script>
+        var exo = {
+            "leader" : "suho",
+            ["main dancer"] : "kai"
+        };
+        document.write("leader : "+exo.leader+"<br>");
+        document.write("main dancer : "+exo["main dancer"]+"<br>");
+        exo["main vocal"]="D.O";
+        document.write("main voal : " +exo["main vocal"]+"<br>");
+        exo.vocal="baekhyun";
+        document.write("vocal : "+exo.vocal+"<br>");
+        exo["sub vocal"]="chanyeol";
+        document.write("sub vocal : "+exo["sub vocal"]);
+    </script>
+
+    <h2>Iterate</h2>
+    <script>
+        for(var key in exo){
+            document.write(key+ " : "+exo[key]+"<br>");
+        }
+    </script>
+
+    <h2>Property & Method</h2>
+    <script>
+        exo.showAll = function(){
+            for(var key in this){
+            document.write(key+ " : "+this[key]+"<br>");
+          }
+        }
+        exo.showAll();
+    </script>
+
+    
+</body>
+</html>
