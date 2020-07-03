@@ -184,9 +184,48 @@ sum(3,4);
 
 27.함수: 리턴 
 
+29.객체 예고 
+-함수와 연관 
+-정리정돈의 수단 
+-변수가 많아져 한계에 무딪혔을 때, 서로 연관된 함수와  변수를 같은 이름으로 
+정리정돈 하는 것 
 
+함수의 이름이 중복 될 때 : 기존의 코드가 다음에 나오는 코드(중복)에 의해 덮어쓰기 되면서 삭제 됨 
+= > 이름이 중복 되지 않도록 앞에 구분해주기 
+ex) function SetColor(  ) ---> function LinksSetColor(  ), function BodysetColor(  )
+=> 데이터의 양이 많아지면 이름도 길어 질 수 있음, 따라서 길어지는 이름을 편리하게 관리하기 위해서 폴더, 디렉토리 역할의 객체를 사용 
+ex) LinksSetColor(  ) ---> Links.setcolor(  )
+BodysetColor(  ) ---> Body.setcolor(   )
 
+document.querySelector(   ) 
+=> 객체: documnet  함수:querySelector 
+객체에 속해있는 함수는 '메소드'라고 불린다 
 
+30.객체 쓰기와 읽기 
+배열: 정보를 담는 그릇, 순서대로 정보를 저장 /  '[  ]' 사용 
+객체: 순서 없이 정보를 저장 (이름이 있는 정리정돈 상자)  / '{  }'사용  
+
+이름에 띄어쓰기를 넣을 수 없음 , [ ]를 사용 할 것 
+ex) coworkers.data scientist (X) ---> coworkers["data scientist"](O)
+
+31.객체와 반복문 
+javascript object iterate (객체 반복문) 
+: for ( var key in yourobject) { document.write(key);  }
+: for ( var key in yourobject) { document.write(exo[key]);  }
+=>exo(객체)에 있는 key값(leader , main dancer, vocal, main vocal, sub vocal....) 하나하나를 변수 값으로 세팅 해준다. 
+
+32. 객체프로퍼티와 메소드 
+coworkers.showAll = function( ){ } 
+function showAll( ) { }
+var showAll = function( ) { }
+=> 같은 표현(의미)
+
+객체에 소속된 함수 : 메소드 
+객체에 소속된 변수 : 프로퍼티 
+
+객체의 이름 바꼈을때, 데이터를 못가져 올 수 있음 
+따라서 함수 안에서 함수가 소속되어 있는 객체를 가르키는 약속된 기호 사용 
+= this 
 
 
 
