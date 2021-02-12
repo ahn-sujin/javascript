@@ -1,4 +1,4 @@
-# javascript
+# JAVASCRIPT
 javascript study
 
 ## About
