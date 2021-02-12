@@ -1,9 +1,9 @@
 # javascript
 javascript study
 
-## about
+## About
 * javascript 공부를 기록하는 저장소입니다. 
 
-##contact
+## Contact
 :envelope: asj9674@gmail.com 
  
