@@ -36,14 +36,22 @@ javascript study
 * 변수 사용의 이유: 방대한 자료 속 특정한 문자를 변수를 이용하여 정확하고 빠르게 바꿀 수 있다.
 
 ## 3. 제어할 태그 선택하기 
-* javascript select tag by css selector 
+* javascript select tag by css selector
+
+
 :  element = document .querySelector(selectors);
+
+
 ex) var el = document .querySelector(".myclass");
 
-* javascript element style 
+* javascript element style
+
+
 : var x = document .getElementById("myH1").style;
 
 * javascript style background-color
+
+
 : document.body.style.backgroundColor="red";
 
 ## 4. 프로그램, 프로그래맹, 프로그래머 
@@ -64,17 +72,22 @@ ex) var el = document .querySelector(".myclass");
 #### html '<'  은  '&lt;' 로 표현한다 
 
 ## 16. 조건문 
-###  document .write("1");
+<pre>
+<code>
+document .write("1");
 if (true){
       document.write("2");
 }    else  {
      document.write("3");
 }
-document.write("4");		
+document.write("4");	
+</code>
+</pre>
+
 
 ===> if (  true or false  ) {  A  } else { B  }   
-            : if 절의 값이 true 일 때, else 조건문(B) 이 생략 되고, 
-              if 절의 값이 false 일 때, if 조건문(A) 이 생략 된다.  
+* if 절의 값이 true 일 때, else 조건문(B) 이 생략 되고, 
+* if 절의 값이 false 일 때, if 조건문(A) 이 생략 된다.  
               
 
 
