@@ -46,7 +46,8 @@ javascript study
       
 
 * javascript element style
- 
+
+
  : var x = document .getElementById("myH1").style;
       
 
@@ -68,12 +69,12 @@ javascript study
 
 ## 6. 비교 연산자와 블리언 
 ### 6-1. === (비교 연산자)
-#### ex) 1 === 1   : true    /  1===2  : false
+   ex) 1 === 1   : true    /  1===2  : false
 
 ### 6-2. true / false (블리언) 
-#### html '<'  은  '&lt;' 로 표현한다 
+   html '<'  은  '&lt;' 로 표현한다 
 
-## 16. 조건문 
+## 7. 조건문 
 <pre>
 <code>
 document .write("1");
@@ -89,7 +90,115 @@ document.write("4");
 
 ===> if (  true or false  ) {  A  } else { B  }   
 * if 절의 값이 true 일 때, else 조건문(B) 이 생략 되고, 
-* if 절의 값이 false 일 때, if 조건문(A) 이 생략 된다.  
+* if 절의 값이 false 일 때, if 조건문(A) 이 생략 된다. 
+
+## 8. 조건문의 활용 
+* javascript element get value
+
+
+  : document.querySelector('selector' ).value;
+  
+## 9. 리팩토링 중복의 제거 
+* 리팩토링: 비효울적인 코드를 효율적으로 만들어 가독성을 높이고 유지보수가 쉽도록 코드를 개선 
+
+### 9-1. this: 이벤트가 속해 있는 자신을 가르킴 (따로 id, class명을 설정하지 않아도 됨)
+<pre>
+<code>
+<input id="night_day" type="button" value="night" onclick="
+    if(document.querySelector('#night_day').value ==='night'){
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    document.querySelector('#night_day').value='day';
+    } else {
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    document.querySelector('#night_day').value='night';
+    }
+">
+</code>
+</pre>
+
+<pre>
+<code>
+ <input  type="button" value="night" onclick="
+    if(this.value ==='night'){
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    this.value='day';
+    } else {
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    this.value='night';
+    }
+ ">
+</code>
+</pre>
+
+* 코딩을 잘하는 tip : 중복되는 코드 제거!
+
+### 9-2. 중복되는 코드 이름 설정 
+<pre>
+<code>
+<input  type="button" value="night" onclick="
+    if(this.value ==='night'){
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';
+    this.value='day';
+    }
+    ">
+</code>
+</pre>
+
+<pre>
+<code>
+ <input  type="button" value="night" onclick="
+   var target = document.querySelector('body');	
+    if(this.value ==='night'){
+    target.style.backgroundColor='black';
+    target.style.color='white';
+    this.value='day';
+    }
+    ">
+</code>
+</pre>
+
+## 10. 배열(Array)
+*  [ "값1", "값2" ]
+
+  index 0 = 값1
+  
+  index 1 = 값2
+
+* javascript array count 
+
+  : var fruits = ["Banana" , "Orange" , "Apple", "Mango"]; fruits.length;
+  
+* javascript array add data
+
+  : var fruits = ["Banana" , "Orange" , "Apple", "Mango"]; fruits.push("Kiwi");
+  
+## 11. 반복문(Loop)
+* 반복문: 순서대로 흐르는 순서문의 흐름을 제어 
+* while(ture / false ){     코드   } 
+
+  : ( ) 안에 값이 false가 될 때까지 { } 안에 코드 들이 실행 됨, ( ) 안에 값이 false가 되면 
+  
+*  while문 :  바깥에 코드가 실행됨. (반복문 종료)
+*  var i  = 0; : 실행 코드가 몇번 실행 됐는지 적는 코드  
+
+
+
+  
+  
+  
+
+
+
+
+
+  
+
+
               
 
 
