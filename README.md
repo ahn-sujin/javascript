@@ -39,20 +39,23 @@ javascript study
 * javascript select tag by css selector
 
 
-:  element = document .querySelector(selectors);
+      :  element = document .querySelector(selectors);
 
 
-ex) var el = document .querySelector(".myclass");
+      ex) var el = document .querySelector(".myclass");
+      
 
 * javascript element style
 
 
-: var x = document .getElementById("myH1").style;
+      : var x = document .getElementById("myH1").style;
+      
 
 * javascript style background-color
 
 
-: document.body.style.backgroundColor="red";
+      : document.body.style.backgroundColor="red";
+      
 
 ## 4. 프로그램, 프로그래맹, 프로그래머 
 * HTML: 프로그래밍 언어(X), 시간에 순서에 구애 받지 않는다 
